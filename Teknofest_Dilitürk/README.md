@@ -165,11 +165,6 @@ curl -X POST http://127.0.0.1:8000/chat_from_audio \
 
 ---
 
-## 📜 Lisans
-
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Ayrıntılar için `LICENSE` dosyasına bakınız.
-
----
 
 ## 🙏 Teşekkür
 
