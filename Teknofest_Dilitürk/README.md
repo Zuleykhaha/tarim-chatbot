@@ -31,21 +31,7 @@ Ses (STT) özelliği **opsiyoneldir** ve `faster-whisper` ile sağlanır.
 
 ---
 
-## 📁 Önerilen Dizin Yapısı
 
-```
-.
-├─ backend/
-│  └─ tddi_backend.py
-├─ frontend/
-│  └─ tddi_frontend.py
-├─ models/
-│  ├─ mobilenetv3_small_plants_best.pt   # MODEL_PATH
-│  └─ labels.txt                          # LABELS_PATH (satır başına bir etiket)
-├─ requirements.txt
-├─ LICENSE
-└─ README.md
-```
 
 > Not: Dosyalarınız şu an kök dizinde olabilir; bu sadece öneri.
 
@@ -69,31 +55,6 @@ pip install -r requirements.txt
 ```
 
 > **PyTorch (GPU) için:** CUDA sürümünüze uygun teker komutunu PyTorch’un resmi yönergelerinden uygulayın; ardından `torch` ve `torchvision` doğru kurulmuş olmalı.
-
----
-
-## ⚙️ Ortam Değişkenleri
-
-Backend ve frontend çeşitli ortam değişkenleri kabul eder. Aşağıdaki tablo **en sık kullanılanları** özetler:
-
-| Değişken | Varsayılan | Açıklama |
-|---|---|---|
-| `MODEL_PATH` | `./mobilenetv3_small_plants_best.pt` | MobileNetV3 ağırlık dosyası |
-| `LABELS_PATH` | `./labels.txt` | Etiket dosyası (her satır 1 sınıf) |
-| `IMAGE_SIZE` | `224` | Giriş boyutu (preprocess) |
-| `DEVICE` | (otomatik) | Görüntü modeli için `cpu` veya `cuda` |
-| `LLM_BASE_ID` | `Qwen/Qwen2.5-3B-Instruct` | Hugging Face model ID’si |
-| `LLM_ADAPTER_DIR` | `./adapter` | (Opsiyonel) PEFT adapter dizini |
-| `LLM_MAX_NEW` | `128` | LLM yeni token sınırı |
-| `LLM_TEMP` | `0.7` | Sıcaklık |
-| `LLM_TOP_P` | `0.9` | Top‑p örnekleme |
-| `LLM_RP` | `1.05` | Tekrar cezası |
-| `LLM_MAX_TIME` | `25` | Maks jenerasyon süresi (sn) |
-| `STT_DEVICE` | `cpu` | STT cihazı (`cpu`/`cuda`) |
-| `STT_COMPUTE` | `int8` | STT hesap türü (`float16`, `int8`, …) |
-| `STT_MODEL_ID` | `tiny` | faster‑whisper modeli |
-| `BACKEND_URL` | `http://127.0.0.1:8000` | Frontend’in bağlanacağı backend URL’si |
-| `REQ_TIMEOUT` | `180` | Frontend istek zaman aşımı (sn) |
 
 ---
 
