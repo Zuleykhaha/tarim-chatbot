@@ -31,8 +31,6 @@ Ses (STT) özelliği **opsiyoneldir** ve `faster-whisper` ile sağlanır.
 
 
 
-> Not: Dosyalarınız şu an kök dizinde olabilir; bu sadece öneri.
-
 ---
 
 ## 🧩 Bağımlılıklar
@@ -87,7 +85,7 @@ Arayüz varsayılan olarak `http://127.0.0.1:7860` üzerinde açılır.
 
 ---
 
-## 🧪 API Hızlı Test
+##  API Hızlı Test
 
 **Görüntü Sınıflandırma**
 ```bash
@@ -125,5 +123,5 @@ curl -X POST http://127.0.0.1:8000/chat_from_audio \
 ---
 
 
-## 🙏 Teşekkür
+
 
